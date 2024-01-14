@@ -1,13 +1,16 @@
-n = map(int ,input())
+import sys
+from collections import deque
+input = sys.stdin.readline
 
-a = []
-for i in n:
-    a.append(int(input()))
-
+n = int(input())
+a = set(map(int, input().split()))
 m = int(input())
+b = list(map(int, input().split()))
 
-b = []
-for i in n:
-    b.append(int(input()))
+for i in b:
+    if i in a:
+        print(1)
+    else:
+        print(0)
 
-print(a, b)
+# print(a, b)
