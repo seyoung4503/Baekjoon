@@ -26,6 +26,7 @@ for i in x:
 mode_list = list(mode.items())
 # print(mode)
 # print(mode_list)
+
 c = sorted(mode_list, key = lambda x : -x[1])
 # print(c)
 if len(c) > 1:
@@ -37,5 +38,4 @@ else:
     print(c[0][0])
 
 ranges = x[-1] - x[0]
-#ans.append(ranges)
 print(ranges)
