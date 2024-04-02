@@ -35,7 +35,7 @@ def dfs(parent):
             visited[i] = 1
 
             dfs(i)
-            # visited[i] = 0
+            visited[i] = 0
 
 dfs(1)
 
